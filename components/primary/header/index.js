@@ -24,12 +24,12 @@ export const AppHeader = () => {
           </div>
 
           <div className="hidden sm:block">
-            <ul className="flex flex-row space-x-4 text-sm font-medium uppercase tracking-wider list-none">
+            <ul className="flex flex-row space-x-4 !font-bold uppercase tracking-wider list-none">
               {pageRoutes?.map((item, _idx) => (
                 <li key={_idx}>
                   <Link
                     href={item?.path}
-                    className="text-app-theme hover:underline transition duration-300 ease-in-out"
+                    className={`hover:text-app-dark text-app-theme ${appTransitionClasses}`}
                   >
                     {item?.label}
                   </Link>
@@ -39,7 +39,7 @@ export const AppHeader = () => {
           </div>
           <div className="hidden sm:flex sm:items-center sm:gap-x-4">
             <Link href="/get-quote">
-              <AppButton label={"Get Quote"} />
+              <AppButton className="font-normal" label={"Get Quote"} />
             </Link>
           </div>
           <div

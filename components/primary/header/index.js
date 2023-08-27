@@ -38,8 +38,8 @@ export const AppHeader = () => {
             </ul>
           </div>
           <div className="hidden sm:flex sm:items-center sm:gap-x-4">
-            <Link href="/contact-us">
-              <AppButton label={"Contact Us"} />
+            <Link href="/get-quote">
+              <AppButton label={"Get Quote"} />
             </Link>
           </div>
           <div

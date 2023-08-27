@@ -9,9 +9,9 @@ const ResponsiveMenu = ({ active, onClose }) => {
     <>
       <div
         className={`fixed ${
-          !active ? "top-[-400%]" : "top-0"
+          !active ? "top-[-500%]" : "top-0"
         } left-0 bg-app-theme w-full shadow-inner z-20 sm:hidden
-          p-3 drop-shadow-md ${appTransitionClasses}
+          py-5 px-3 drop-shadow-md ${appTransitionClasses}
           `}
       >
         <div className="text-right">
@@ -30,7 +30,7 @@ const ResponsiveMenu = ({ active, onClose }) => {
         <div className="py-5">
           <ul className="grid gap-2">
             <li>
-              <AppLogo />
+              <AppLogo className="flex items-center justify-center" />
             </li>
             {pageRoutes?.map((item, _idx) => (
               <li key={_idx} className="">

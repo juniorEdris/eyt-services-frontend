@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <section className="">
           <TWMaterialComponents>
             <AppHeader />
-            <section className="pt-[58px]">{children}</section>
+            <section className="">{children}</section>
           </TWMaterialComponents>
         </section>
       </body>

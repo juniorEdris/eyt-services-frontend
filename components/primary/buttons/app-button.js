@@ -13,7 +13,7 @@ const AppButton = ({
     <Button
       variant={variant}
       className={cn(
-        `rounded-lg bg-app-theme hover:bg-app-btn hover:opacity-75 text-white hover:text-white border-none font-Cairo ${appTransitionClasses}`,
+        `rounded-lg bg-app-theme hover:bg-app-btn hover:opacity-75 text-app-light hover:text-app-dark border-none font-Cairo ${appTransitionClasses}`,
         className,
       )}
     >

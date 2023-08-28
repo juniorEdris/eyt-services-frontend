@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <section className="">
           <TWMaterialComponents>
             <AppHeader />
-            <section className="">{children}</section>
+            <section className="overflow-x-hidden">{children}</section>
           </TWMaterialComponents>
         </section>
       </body>

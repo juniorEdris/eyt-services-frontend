@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`overflow-x-hidden`}>
-        <section className="">
+        <section className="relative max-w-[1480px] m-auto">
           <TWMaterialComponents>
             <AppHeader />
             <section className="overflow-x-hidden">{children}</section>

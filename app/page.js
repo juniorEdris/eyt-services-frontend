@@ -1,9 +1,11 @@
 import LandingHero from "@/components/landing-page/hero";
+import CategorySection from "@/components/landing-page/categories";
 
 function Home() {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="">
       <LandingHero />
+      <CategorySection />
     </main>
   );
 }

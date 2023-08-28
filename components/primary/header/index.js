@@ -20,7 +20,7 @@ export const AppHeader = () => {
       <Container>
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-center">
-            <AppLogo />
+            <AppLogo className="text-app-light" />
           </div>
 
           <div className="hidden sm:block">
@@ -29,7 +29,7 @@ export const AppHeader = () => {
                 <li key={_idx}>
                   <Link
                     href={item?.path}
-                    className={`hover:text-app-dark text-app-theme ${appTransitionClasses}`}
+                    className={`hover:text-app-theme text-app-light ${appTransitionClasses}`}
                   >
                     {item?.label}
                   </Link>
@@ -46,7 +46,7 @@ export const AppHeader = () => {
             className={`sm:hidden hover:bg-app-gray p-2 rounded-full ${appTransitionClasses}`}
           >
             <Menu
-              className="h-6 w-6 cursor-pointer"
+              className="h-6 w-6 cursor-pointer text-app-light"
               onClick={toggleMenus}
               tabIndex={0}
               role="button"

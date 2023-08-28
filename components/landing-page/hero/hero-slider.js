@@ -17,7 +17,7 @@ export const SwiperNavButtons = () => {
   const swiper = useSwiper();
 
   return (
-    <div className="swiper-nav-btns absolute top-2/4 px-4 z-10 w-full">
+    <div className="swiper-nav-btns absolute top-2/4 pl-4 pr-8 2xl:!px-4 z-10 w-full">
       <div className="flex items-center justify-between">
         <button onClick={() => swiper.slidePrev()}>
           <ChevronLeftCircle color="white" size={48} strokeWidth={1} />
@@ -39,7 +39,7 @@ const HeroSlider = ({ items }) => {
         disableOnInteraction: false,
       }}
       modules={[Autoplay, EffectFade, Navigation]}
-      className="w-screen relative"
+      className="w-screen relative max-w-[1480px] m-auto"
       effect="fade"
     >
       {items?.map((item) => (
@@ -53,6 +53,8 @@ const HeroSlider = ({ items }) => {
               src={item?.image}
               fill={true}
               priority={false}
+              objectFit="cover"
+              objectPosition="center"
               alt={item?.description}
             />
           </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 // import Swiper core and required modules
 import { Autoplay, EffectFade, Navigation } from "swiper/modules";
@@ -12,6 +11,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import { ChevronLeftCircle, ChevronRightCircle } from "lucide-react";
+import ImageWithCustomSize from "@/components/primary/FreeSizeImage";
 
 export const SwiperNavButtons = () => {
   const swiper = useSwiper();
@@ -47,17 +47,11 @@ const HeroSlider = ({ items }) => {
           key={item?.description}
           className="!flex justify-center items-center w-full"
         >
-          <div className="h-[485px] w-full relative overflow-hidden">
-            <Image
-              className="object-cover"
-              src={item?.image}
-              fill={true}
-              priority={false}
-              // objectFit="cover"
-              // objectPosition="center"
-              alt={item?.description}
-            />
-          </div>
+          <ImageWithCustomSize
+            parentClassName="h-[485px]"
+            image={item?.image}
+            alt={item?.description}
+          />
         </SwiperSlide>
       ))}
       <SwiperNavButtons />

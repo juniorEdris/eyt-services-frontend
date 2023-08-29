@@ -1,6 +1,6 @@
 import { LandingPageHeadings } from "@/components/primary/app-headings";
 import Container from "@/components/primary/container";
-import ImageWithCustomSize from "../../primary/FreeSizeImage";
+import ImageWithCustomSize from "@/components/primary/FreeSizeImage";
 
 const LandingBanner = () => {
   return (

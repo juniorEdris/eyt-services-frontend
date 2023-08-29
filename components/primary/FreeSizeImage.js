@@ -13,7 +13,7 @@ const ImageWithCustomSize = ({
     >
       <Image
         src={image}
-        className={cn("rounded-md w-full object-cover object-top", className)}
+        className={cn("rounded-md w-full object-cover", className)}
         fill={true}
         priority={false}
         alt={alt}

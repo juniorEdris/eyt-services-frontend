@@ -1,13 +1,12 @@
 import CategoryCard from "@/components/landing-page/categories/categoryCard";
 import Container from "@/components/primary/container";
+import { LandingPageHeadings } from "@/components/primary/app-headings";
 
 const CategorySection = () => {
   return (
     <section className="py-12" id="services">
       <Container>
-        <h1 className="text-2xl md:text-5xl text-center font-semibold capitalize mb-8 md:mb-16">
-          Our Services
-        </h1>
+        <LandingPageHeadings heading="our services" />
         <div className="grid sm:grid-cols-3 gap-5">
           <CategoryCard
             item={{

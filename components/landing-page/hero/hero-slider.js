@@ -53,8 +53,8 @@ const HeroSlider = ({ items }) => {
               src={item?.image}
               fill={true}
               priority={false}
-              objectFit="cover"
-              objectPosition="center"
+              // objectFit="cover"
+              // objectPosition="center"
               alt={item?.description}
             />
           </div>

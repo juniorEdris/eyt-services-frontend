@@ -10,12 +10,12 @@ const CategoryCard = ({ item }) => {
           <div className="relative h-56 w-full overflow-x-hidden">
             <Image
               src={item?.image}
-              className="rounded-md w-full"
+              className="rounded-md w-full object-cover object-top"
               fill={true}
               priority={false}
               alt={item?.label}
-              objectFit="cover"
-              objectPosition="center"
+              // objectFit="cover"
+              // objectPosition="center"
             />
           </div>
 

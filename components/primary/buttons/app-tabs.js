@@ -29,7 +29,7 @@ const AppTabs = ({ items = [] }) => {
               key={value}
               value={value}
               onClick={() => setActiveTab(value)}
-              className={`text-xl font-medium !font-Cairo ${
+              className={`text-xl hover:text-app-theme font-medium !font-Cairo ${
                 activeTab === value ? "text-app-theme" : ""
               } ${appTransitionClasses}`}
             >

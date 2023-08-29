@@ -7,17 +7,26 @@ const CategoryCard = ({ item }) => {
   return (
     <div className="drop-shadow-sm">
       <Link href={`/services/${item.id}`} className="group/category-banner">
-        <div className="grid gap-3">
+        <div className={`grid gap-3`}>
           <ImageWithCustomSize
-            className="object-top"
+            className={`hover:scale-110 ${appTransitionClasses} object-top`}
             image={item?.image}
             alt={item?.label}
           />
-          <div
-            className={`md:text-lg text-app-theme font-medium text-center cursor-pointer group-hover/category-banner:animate-fade-up ${appTransitionClasses}`}
-          >
-            {item?.label}
-          </div>
+          {item?.category ? (
+            <div
+              className={`text-gray-600 text-center cursor-pointer group-hover/category-banner:text-app-dark ${appTransitionClasses}`}
+            >
+              {item?.category}
+            </div>
+          ) : null}
+          {item?.label ? (
+            <div
+              className={`md:text-lg text-app-theme font-semibold text-center cursor-pointer group-hover/category-banner:animate-fade-up ${appTransitionClasses}`}
+            >
+              {item?.label}
+            </div>
+          ) : null}
         </div>
       </Link>
     </div>

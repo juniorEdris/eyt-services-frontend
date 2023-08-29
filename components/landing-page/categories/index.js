@@ -11,14 +11,16 @@ const CategorySection = () => {
           <CategoryCard
             item={{
               id: 0,
-              label: "Company Profile Design",
+              category: "Company Profile Design",
+              label: "",
               image: "/images/landing-page/category/company_file.jpg",
             }}
           />
           <CategoryCard
             item={{
               id: 1,
-              label: "Packaging Design",
+              category: "Packaging Design",
+              label: "",
               image: "/images/landing-page/category/packaging-design.jpg",
             }}
           />
@@ -26,7 +28,8 @@ const CategorySection = () => {
           <CategoryCard
             item={{
               id: 0,
-              label: "T-Shirt Design",
+              category: "T-Shirt Design",
+              label: "",
               image: "/images/landing-page/category/tshirt-design.jpg",
             }}
           />

@@ -8,12 +8,13 @@ const AppButton = ({
   className = "",
   label = "",
   Icon = null,
+  // handleClick = () => {},
 }) => {
   return (
     <Button
       variant={variant}
       className={cn(
-        `rounded-lg bg-app-theme hover:bg-app-btn hover:opacity-75 text-app-light hover:text-app-dark border-none font-Cairo ${appTransitionClasses}`,
+        `rounded-lg bg-app-theme hover:bg-app-btn hover:opacity-75 text-app-light hover:text-app-dark border-none font-Cairo focus:ring-0 outline-none ${appTransitionClasses}`,
         className,
       )}
     >

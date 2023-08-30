@@ -22,7 +22,6 @@ const BrandsSlider = ({ items }) => {
         delay: 2500,
         disableOnInteraction: true,
       }}
-      loop={true}
       breakpoints={{
         480: { slidesPerView: 2 },
         768: { slidesPerView: 5 },

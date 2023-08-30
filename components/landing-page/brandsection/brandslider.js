@@ -20,7 +20,9 @@ const BrandsSlider = ({ items }) => {
       spaceBetween={10}
       autoplay={{
         delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+        stopOnLastSlide: false,
       }}
       breakpoints={{
         480: { slidesPerView: 2 },

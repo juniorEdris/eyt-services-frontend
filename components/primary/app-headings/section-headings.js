@@ -7,9 +7,10 @@ export const LandingPageHeadings = ({
   iconClassName = "",
   headingClassName = "",
   subheadingClassName = "",
+  parentClassName = "",
 }) => {
   return (
-    <div className="grid gap-4 mb-8 md:mb-16">
+    <div className={cn("grid gap-4 mb-8 md:mb-16", parentClassName)}>
       {Icon ? (
         <div className="text-center">
           <Icon className={cn(`inline-block h-6 w-6`, iconClassName)} />

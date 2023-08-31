@@ -41,11 +41,15 @@ const CompanyInfo = () => {
       <div className="py-6">
         <Container>
           <LandingPageHeadings
+            parentClassName="md:mb-8"
             headingClassName="text-left"
             heading="Graphic Design Agency | Best graphic design services"
           />
 
-          <Typography variant="paragraph" className="font-Cairo">
+          <Typography
+            variant="paragraph"
+            className="font-Cairo font-medium text-gray-600"
+          >
             Material Tailwind is an easy to use components library for Tailwind
             CSS and Material Design. It provides a simple way to customize your
             components, you can change the colors, fonts, breakpoints and

@@ -9,14 +9,11 @@ const ImageWithCustomSize = ({
 }) => {
   return (
     <div
-      className={cn(
-        "relative h-56 w-full overflow-hidden rounded-md",
-        parentClassName,
-      )}
+      className={cn("relative h-56 w-full overflow-hidden", parentClassName)}
     >
       <Image
         src={image}
-        className={cn("rounded-md w-full object-cover", className)}
+        className={cn("w-full object-cover", className)}
         fill={true}
         priority={false}
         alt={alt}

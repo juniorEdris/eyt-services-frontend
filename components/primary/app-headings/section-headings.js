@@ -19,7 +19,7 @@ export const LandingPageHeadings = ({
         </h1>
       ) : null}
       {subheading ? (
-        <p className="text-sm sm:text-base font-normal max-w-xl m-auto leading-relaxed tracking-widest">
+        <p className="text-sm sm:text-base font-normal max-w-xl m-auto leading-relaxed tracking-widest capitalize">
           {subheading}
         </p>
       ) : null}

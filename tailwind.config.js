@@ -10,6 +10,10 @@ module.exports = withMT({
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    boxShadow: {
+      app_shadow: "0px 0px 8px 2px rgba(0,0,0,0.1)",
+      // rest of the box shadow values
+    },
     fontFamily: {
       Cairo: ["Cairo"],
     },

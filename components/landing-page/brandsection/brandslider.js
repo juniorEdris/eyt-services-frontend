@@ -31,14 +31,14 @@ const BrandsSlider = ({ items }) => {
       modules={[Autoplay]}
     >
       {items?.map((item, _idx) => (
-        <SwiperSlide
-          key={_idx}
-          className="w-screen relative"
-          title={item?.label}
-        >
-          <Link href={item?.href} className={`w-full h-full`} target="_blank">
+        <SwiperSlide key={_idx} className="relative" title={item?.label}>
+          <Link
+            href={item?.href}
+            className={`w-full h-full flex items-center justify-center`}
+            target="_blank"
+          >
             <ImageWithCustomSize
-              parentClassName="w-24 h-24 rounded-none"
+              parentClassName="w-12 h-12 rounded-none"
               className="rounded-none"
               image={item?.image}
             />

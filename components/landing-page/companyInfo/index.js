@@ -13,14 +13,15 @@ const CompanyInfo = () => {
         />
       </Container>
 
-      <div className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 max-w-7xl m-auto">
-        {ourProducts?.map((item, _idx) => (
-          <ImageWithCustomSize
-            key={_idx}
-            parentClassName=""
-            image={item?.image}
-            alt={item?.label}
-          />
+      <div className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 max-w-7xl m-auto">
+        {companyProducts?.map((item, _idx) => (
+          <div key={_idx} className="cursor-pointer">
+            <ImageWithCustomSize
+              parentClassName=""
+              image={item?.image}
+              alt={item?.label}
+            />
+          </div>
         ))}
       </div>
     </section>

@@ -1,6 +1,6 @@
 import Container from "@/components/primary/container";
 import { LandingPageHeadings } from "@/components/primary/app-headings";
-import { companyProducts, ourProducts } from "@/lib/utils/uiData";
+import { ourProducts } from "@/lib/utils/uiData";
 import CategoryCard from "@/components/landing-page/categories/categoryCard";
 
 const OurProducts = () => {
@@ -13,7 +13,7 @@ const OurProducts = () => {
         />
 
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-5">
-          {companyProducts?.map((item, _idx) => (
+          {ourProducts?.map((item, _idx) => (
             <CategoryCard key={_idx} item={item} />
           ))}
         </div>

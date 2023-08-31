@@ -12,7 +12,7 @@ const OurProducts = () => {
           subheading="all the best products for you"
         />
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-5">
           {ourProducts?.map((item, _idx) => (
             <CategoryCard key={_idx} item={item} />
           ))}

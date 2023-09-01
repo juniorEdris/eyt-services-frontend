@@ -16,7 +16,7 @@ import "swiper/css/autoplay";
 const BrandsSlider = ({ items }) => {
   return (
     <Swiper
-      slidesPerView={1}
+      slidesPerView={2}
       spaceBetween={10}
       autoplay={{
         delay: 2500,
@@ -25,7 +25,7 @@ const BrandsSlider = ({ items }) => {
         stopOnLastSlide: false,
       }}
       breakpoints={{
-        480: { slidesPerView: 2 },
+        480: { slidesPerView: 3 },
         768: { slidesPerView: 5 },
       }}
       modules={[Autoplay]}

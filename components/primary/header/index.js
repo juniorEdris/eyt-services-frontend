@@ -38,7 +38,7 @@ export const AppHeader = () => {
             </ul>
           </div>
           <div className="hidden sm:flex sm:items-center sm:gap-x-4">
-            <Link href="/get-quote">
+            <Link href="/">
               <AppButton className="font-normal" label={"Get Quote"} />
             </Link>
           </div>

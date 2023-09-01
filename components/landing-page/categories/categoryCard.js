@@ -7,7 +7,7 @@ const CategoryCard = ({ item }) => {
     <div
       className={`hover:shadow-app_shadow p-2 drop-shadow-sm ${appTransitionClasses}`}
     >
-      <Link href={`/services/${item.id}`} className="group/category-banner">
+      <Link href={`/`} className="group/category-banner">
         <div className={`grid gap-3`}>
           <ImageWithCustomSize
             parentClassName="rounded-none"

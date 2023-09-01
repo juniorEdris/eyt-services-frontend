@@ -1,6 +1,7 @@
 import { TWMaterialComponents } from "@/lib/twMaterialAssets";
 import "./globals.css";
 import { AppHeader } from "@/components/primary/header";
+import AppFooter from "@/components/primary/footer";
 
 export const metadata = {
   title: "EYT | Explore Your Vision",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           <TWMaterialComponents>
             <AppHeader />
             <section className="overflow-x-hidden">{children}</section>
+            <AppFooter />
           </TWMaterialComponents>
         </section>
       </body>

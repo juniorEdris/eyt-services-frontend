@@ -11,7 +11,12 @@ const DescriptionTexts = ({
   return (
     <div className={cn(``, parentClassName)}>
       {title ? (
-        <h1 className={cn(`text-3xl text-gray-700 mb-3`, titleClassName)}>
+        <h1
+          className={cn(
+            `text-xl md:text-3xl text-gray-700 mb-3`,
+            titleClassName,
+          )}
+        >
           {title}
         </h1>
       ) : null}
